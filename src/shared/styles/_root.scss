@@ -1,0 +1,29 @@
+:root {
+    /* 
+     === Colors ===
+     */
+    --white: #fff;
+    --black: #000;
+    --gray-800: #212121;
+ 
+    /* 
+     === Layers ===  
+     */
+    --z-over: 1;
+    --z-under: -1;
+ 
+    /* 
+     === Transitions ===
+     */
+    --trans-fast: 0.3s ease;
+    --trans-middle: 0.5s ease;
+ 
+    /* 
+   === Screen width ===
+    */
+    --desktop: 1440px;
+    --lg: 1024px;
+    --tablet: 768px;
+    --mobile: 480px;
+ }
+ 

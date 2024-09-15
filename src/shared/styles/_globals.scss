@@ -1,0 +1,30 @@
+@import 'mixins';
+@import 'variables';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   --site-scale: calc(100vw / var(--desktop));
+
+   font-size: calc(var(--site-scale) * #{16});
+
+   @include to($lg) {
+      --site-scale: calc(100vw / var(--lg));
+   }
+
+   @include to($tablet) {
+      --site-scale: calc(100vw / var(--tablet));
+   }
+
+   @include to($mobile) {
+      --site-scale: calc(100vw / var(--mobile));
+   }
+}
+
+body {
+   background-color: var(--gray-800);
+}
